@@ -1,0 +1,93 @@
+/* ==================== 
+   base.css - 基础公共样式 
+   说明：清除默认样式、设置网页基本样式
+   ==================== */
+
+/* 清除默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 移除列表样式 */
+ul, ol {
+  list-style: none;
+}
+
+/* 移除链接下划线 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 移除按钮默认样式 */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  color: inherit;
+}
+
+/* 移除输入框默认样式 */
+input, textarea {
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+/* 图片自适应 */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 网页基本样式 */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 文字溢出省略号 */
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 多行文字省略 */
+.ellipsis-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 隐藏元素 */
+.hidden {
+  display: none !important;
+}
+
+/* 通用容器 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
