@@ -99,6 +99,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 /* 主卡片区域样式 */
 .banner .left{
@@ -276,3 +277,98 @@ input::placeholder{
     color: #a0a0a0;
     /* 详细信息用灰色 */
 }
+/* 页脚区域样式 */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    padding: 20px;
+    margin-top: 24px;
+    background: #1a1a2e;
+    border-radius: 12px;
+}
+.footer .playbar{
+    margin-right: 20px;
+}
+ .time {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 15px;
+    font-family: monospace;
+ }
+
+
+ .seek-bar {
+    width: 100%;
+    height: 6px; 
+    border-radius: 5px; 
+    background: #3d3d5c;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #ff0055 0%, #ff5e00 100%);
+    background-repeat: no-repeat; 
+    background-size: 20% 100%;
+ } 
+.seek-bar::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    background: transparent; 
+    border-radius: 5px;
+ }
+
+.seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ff6b9d; 
+    margin-top: -5px; 
+    box-shadow: 0 0 10px rgba(255, 107, 157, 0.8);
+    transition: transform 0.1s;
+ } 
+ .seek-bar::-webkit-slider-thumb:hover {
+    transform: scale(1.3);
+ }
+ .seek-bar::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    background: transparent;
+    border-radius: 5px;
+ }
+.seek-bar::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    border: none;
+    border-radius: 50%;
+    background: #ff6b9d;
+    box-shadow: 0 0 10px rgba(255, 107, 157, 0.8);
+    cursor: pointer;
+ }
+ .player {
+    display: flex;
+    gap: 15px; */
+
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    border: 1px solid rgba(255, 255, 255, 0.3); */
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+ }
+ .btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ff6b9d;
+    color: #ff6b9d;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(255, 107, 157, 0.4);
+ }
